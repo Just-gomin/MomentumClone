@@ -5,8 +5,8 @@ clockContent = clockContainer.querySelector("h1");
 function getTime() {
   const date = new Date(); // Date객체 생성
   const year = date.getFullYear(); // 연도
-  const month = date.getMonth(); // 달
-  const day = date.getDay(); // 날짜
+  const month = date.getMonth() + 1; // 달
+  const day = date.getDate(); // 날짜
   const minutes = date.getMinutes(); // 분
   const hours = date.getHours(); // 시
   const seconds = date.getSeconds(); // 초
